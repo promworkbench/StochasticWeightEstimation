@@ -1,7 +1,7 @@
 <ivy-module version="2.0">
-    <info organisation="prom" module="NewPackageIvy" revision="latest">
+    <info organisation="prom" module="StochasticWeightEstimation" revision="latest">
     	<description>
-    		Version 6.14.4
+    		Version 6.14.2
     	</description>
     </info>
     <configurations>
@@ -11,6 +11,11 @@
     <dependencies defaultconf="default">
     	<!-- ProM dependencies. -->
     	<!-- Please put every ProM dependency on a single line. -->
+    	<dependency org="prom" name="StochasticAwareConformanceChecking" rev="latest" changing="false" transitive="true" />
+        <dependency org="prom" name="AlphaMiner" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="InductiveVisualMiner" rev="latest" changing="true" transitive="true" />
+    	
     	<!-- ProM framework. -->
     	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
     	<!-- ProM packages. -->
@@ -20,8 +25,11 @@
     	<!-- Please uncomment the second line in the resolve target in your build.xml file
     	     if you have any third party libraries. -->
  		<!-- Third party library downloaded from maven repository. -->
-    	<!-- dependency conf="lib->default" org="org.reflections" name="reflections" rev="0.9.10" /-->
+        <dependency org="org.simpleframework" name="simple-xml" rev="2.7.1" changing="false" transitive="true" />
     	<!-- Third party library downloaded from ProM library. -->
     	<!-- dependency conf="lib->default" org="prom-libs" name="opencsv" rev="2.4-patched" transitive="false" /--> 
+    	
+       <dependency conf="lib->default" org="org.apache.logging.log4j" name="log4j-1.2-api" rev="2.16.0" />
+       <dependency conf="lib->default" org="org.apache.logging.log4j" name="log4j-api" rev="2.16.0"/>
     </dependencies>
 </ivy-module>
