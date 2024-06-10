@@ -29,7 +29,7 @@
     	<!-- Third party library downloaded from ProM library. -->
     	<!-- dependency conf="lib->default" org="prom-libs" name="opencsv" rev="2.4-patched" transitive="false" /--> 
     	
-       <dependency conf="lib->default" org="org.apache.logging.log4j" name="log4j-1.2-api" rev="2.16.0" />
-       <dependency conf="lib->default" org="org.apache.logging.log4j" name="log4j-api" rev="2.16.0"/>
+       <dependency conf="lib->default" org="org.apache.logging.log4j" name="log4j-api" rev="2.16.0" />
+       <dependency conf="lib->default" org="org.apache.logging.log4j" name="log4j-core" rev="2.16.0"/>
     </dependencies>
 </ivy-module>
