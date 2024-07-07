@@ -27,7 +27,7 @@ public class SLPNVisualiserPlugins {
 			)
 	@Visualizer
 	@UITopiaVariant(
-		affiliation = "qut", 
+		affiliation = "QUT", 
 		author = "Adam Banham", 
 		email = "adam_banham@hotmail.com")
 	@PluginVariant(
