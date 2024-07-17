@@ -192,7 +192,7 @@
 	</target>
 	
 	<!-- Target to use to build the project on Hudson -->
-	<target name="buildHudson" depends="clean,resolve,javadoc,compile,makejar,archive" />
+	<target name="buildHudson" depends="clean,resolve,compile,makejar,archive" />
 	
 	<!-- Target to use to prepare for a downstream build -->
 	<!-- The upstream changes will be copied in following this target -->
